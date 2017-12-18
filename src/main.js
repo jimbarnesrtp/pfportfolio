@@ -1,18 +1,3 @@
-
-String.prototype.startsWithI = function(s) {
-  return this.toLowerCase().startsWith(s.toLowerCase())
-} 
-
-var sortPlayers = function(a, b) {
-  if(b.init==a.init) {
-        return b.bonus-a.bonus;
-    } else {
-      return b.init-a.init;
-    }
-
-}
-
-
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 //import the vue instance

@@ -2,6 +2,19 @@ import Vue from 'vue'
 import Vuex from 'Vuex';
 Vue.use(Vuex);
 
+String.prototype.startsWithI = function(s) {
+  return this.toLowerCase().startsWith(s.toLowerCase())
+} 
+
+var sortPlayers = function(a, b) {
+  if(b.init==a.init) {
+        return b.bonus-a.bonus;
+    } else {
+      return b.init-a.init;
+    }
+
+}
+
 export default new Vuex.Store({
   state: {
     count: 0,
